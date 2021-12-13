@@ -28,7 +28,7 @@ on:
 env:
   REGION_ID: cn-hangzhou
   REGISTRY: registry.cn-hangzhou.aliyuncs.com
-  NAMESPACE: RENANTE_GUARDIANO 
+  NAMESPACE: ryguardiano
   IMAGE: repo
   TAG: ${{ github.sha }}
   ACK_CLUSTER_ID: clusterID
@@ -118,7 +118,47 @@ jobs:
         ./kustomize build . | kubectl apply -f -
         kubectl rollout status deployment/$ACK_DEPLOYMENT_NAME
         kubectl get services -o wide
+[![.github/workflows/alibabacloud.yml](https://github.com/ryguardiano/Earning-coins-command/actions/workflows/alibabacloud.yml/badge.svg)](https://github.com/ryguardiano/Earning-coins-command/actions/workflows/alibabacloud.yml)
 -https://etherscan.io/token/0x2f141ce366a2462f02cea3d12cf93e4dca49e4fd#balances
 -https://etherscan.io/address/0x2f141ce366a2462f02cea3d12cf93e4dca49e4fd#code
 -https://etherscan.io/address/0x2f141ce366a2462f02cea3d12cf93e4dca49e4fd
 -#packages/block/CHANGELOG.md
+{
+  "OldCfg": {
+    "API": {
+      "HTTPHeaders": {}
+    },
+    "Addresses": {
+      "API": "/ip4/127.0.0.1/tcp/5001",
+      "Announce": [
+        "/ip4/67.164.115.223/tcp/4001"
+      ],
+      "Gateway": "/ip4/127.0.0.1/tcp/8080",
+      "NoAnnounce": [],
+      "RemoteAPI": "/ip4/127.0.0.1/tcp/5101",
+      "Swarm": [
+        "/ip4/0.0.0.0/tcp/4001",
+        "/ip6/::/tcp/4001"
+      ]
+    },
+    "Bootstrap": [
+      "/ip4/54.213.128.120/tcp/4001/btfs/QmWm3vBCRuZcJMUT9jDZysoYBb66aokmSReX26UaMk8qq5",
+
+
+..........
+
+     
+        "GracePeriod": "20s",
+        "HighWater": 900,
+        "LowWater": 600,
+        "Type": "basic"
+      },
+      "DisableBandwidthMetrics": false,
+      "DisableNatPortMap": false,
+      "DisableRelay": false,
+      "EnableAutoNATService": false,
+      "EnableAutoRelay": false,
+      "EnableRelayHop": false
+    }
+  }
+}
